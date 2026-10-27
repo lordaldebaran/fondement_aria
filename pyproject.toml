@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "onn_arquS"
+version = "0.1.0"
+requires-python = ">=3.10"
+dynamic = ["dependencies"]
+
+[tool.setuptools.packages.find]
+include = ["onn_arquS*"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
